@@ -2,11 +2,11 @@ import promptSync from 'prompt-sync';
 
 export class Controle {
     private _multa: number = 0;
-    private _turbo: boolean = false; // Add a turbo flag
+    private _turbo: boolean = false; 
 
     constructor(
-        private _velocidadeAtual: number = 0, // Inicializa com 0
-        private _velocidadePermitida: number = 0 // Inicializa com 0
+        private _velocidadeAtual: number = 0,
+        private _velocidadePermitida: number = 0 
     ) { }
 
     public get velocidadeAtual(): number {
@@ -35,12 +35,12 @@ export class Controle {
 
     private calcularMulta(): void {
         const excesso = this._velocidadeAtual - this._velocidadePermitida;
-        this._multa = excesso * 10; // Exemplo: R$ 10 por km/h acima do limite
+        this._multa = excesso * 10; 
     }
 
     public acelerar(incremento: number): void {
         if (this._turbo) {
-            incremento *= 2; // If turbo is enabled, double the acceleration
+            incremento *= 2; 
         }
         this._velocidadeAtual += incremento;
     }
