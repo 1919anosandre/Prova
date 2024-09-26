@@ -4,10 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const prompt_sync_1 = __importDefault(require("prompt-sync"));
-const controle_1 = require("./controle"); // Ajuste o caminho conforme necessário
+const controle_1 = require("./controle"); 
 const teclado = (0, prompt_sync_1.default)();
 let option = 0;
-const controle = new controle_1.Controle(); // Muda para "Controle" com C maiúsculo
+const controle = new controle_1.Controle(); 
 while (option !== 9) {
     console.log(`============== Menu =============`);
     console.log(' 1. Definir velocidade permitida   ');
