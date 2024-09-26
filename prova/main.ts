@@ -1,9 +1,9 @@
 import promptSync from 'prompt-sync';
-import { Controle } from './controle'; // Ajuste o caminho conforme necessário
+import { Controle } from './controle'; 
 
 const teclado = promptSync(); 
 let option = 0; 
-const controle = new Controle(); // Muda para "Controle" com C maiúsculo
+const controle = new Controle(); 
 
 while (option !== 9) { 
     console.log(`============== Menu =============`); 
