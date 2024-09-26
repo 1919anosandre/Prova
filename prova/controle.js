@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Controle = void 0;
 class Controle {
-    constructor(_velocidadeAtual = 0, // Inicializa com 0
-    _velocidadePermitida = 0 // Inicializa com 0
+    constructor(_velocidadeAtual = 0, 
+    _velocidadePermitida = 0 
     ) {
         this._velocidadeAtual = _velocidadeAtual;
         this._velocidadePermitida = _velocidadePermitida;
@@ -30,7 +30,7 @@ class Controle {
     }
     calcularMulta() {
         const excesso = this._velocidadeAtual - this._velocidadePermitida;
-        this._multa = excesso * 10; // Exemplo: R$ 10 por km/h acima do limite
+        this._multa = excesso * 10; 
     }
     acelerar(incremento) {
         this._velocidadeAtual += incremento;
